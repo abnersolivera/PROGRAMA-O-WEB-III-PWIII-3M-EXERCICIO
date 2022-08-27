@@ -1,5 +1,12 @@
-# POO PHP
+# Exercicio POO PHP 12/08/222
 
+* Atributos (private)
+* Construtor 
+* Metods public or magic
+* Colocar o valor do livro e depois dar desconto
+* Três objeto/instância - arquivos index
+
+# POO PHP 03/09/22
 
 ## Exercício 01: Crie uma classe chamada Invoice que possa ser utilizado por uma loja de suprimentos de informática para representar uma fatura de um item vendido na loja. Uma fatura deve incluir as seguintes informações como atributos
 
