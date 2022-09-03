@@ -15,7 +15,7 @@ class Circulo{
     private $B;
     private $Radio;
 
-    public function Circle($Radio,$a = 0, $b = 0 ) 
+    public function __construct($Radio,$a = 0, $b = 0 ) 
     {
         $this->A = $a;
         $this->B = $b;

@@ -12,16 +12,16 @@ class Invoice{
         Se o preço por item não for positivo ele deve ser configurado como 0.0. Forneça um método set e um método get para cada variável de instância. 
         Além disso, forneça um método chamado getInvoiceAmount que calcula o valor da fatura (isso é, multiplica a quantidade pelo preço por item) e depois retorna o valor.
     */
-    public $Id = 0;
-    public $Description ="";
-    public $Quantity = 0;
-    public $Price = 0.0;
+    private $Id = 0;
+    private $Description ="";
+    private $Quantity = 0;
+    private $Price = 0.0;
 
     public function __construct($id, $description, $quantity, $price){
         $this->Id = $id;
         $this->Description = $description;
         $this->Quantity = $quantity;
-        $this->Price = $price;
+        $this->Price = $price < 0 ? 0 : $price;
     }
 
     public function __get($value){
